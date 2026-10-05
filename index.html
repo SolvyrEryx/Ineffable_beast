@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>IneffableBeast — The Future Is Easier to Build Than to Predict.</title>
+<meta name="description" content="Ideas, experiments, software. The personal homepage of IneffableBeast." />
+<meta name="theme-color" content="#E9E7DF" />
+<meta name="color-scheme" content="light" />
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="favicon.svg" />
+<link rel="mask-icon" href="favicon.svg" color="#111111" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="IneffableBeast" />
+<meta property="og:title" content="IneffableBeast — The Future Is Easier to Build Than to Predict." />
+<meta property="og:description" content="Ideas, experiments, software." />
+<meta property="og:url" content="https://ineffablebeast.in" />
+<meta property="og:image" content="https://ineffablebeast.in/assets/og.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="453" />
+<meta property="og:image:alt" content="A note from IneffableBeast: Stay curious. Create value. Let everything else compound." />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://ineffablebeast.in/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="IneffableBeast — The Future Is Easier to Build Than to Predict." />
+<meta name="twitter:description" content="Ideas, experiments, software." />
+<meta name="twitter:image" content="https://ineffablebeast.in/assets/og.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="styles.css" />
+<script>document.documentElement.className+=" js"</script>
+</head>
+<body>
+
+<div class="page">
+
+  <header class="masthead">
+    <div class="masthead__id" data-in="1">
+      <span class="monogram" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="currentColor">
+          <rect x="8" y="8.5" width="3.1" height="15" rx=".3"/>
+          <rect x="15" y="8.5" width="3.1" height="15" rx=".3"/>
+          <path d="M18.1 8.5h2a4.3 4.3 0 0 1 0 8.6h-2Z"/>
+          <path d="M18.1 14.9h2.7a4.3 4.3 0 0 1 0 8.6h-2.7Z"/>
+        </svg>
+      </span>
+      <span class="wordmark">Ineffablebeast</span>
+    </div>
+    <span class="masthead__year" data-in="1">2026</span>
+  </header>
+
+  <main class="main">
+    <div class="composition">
+
+      <!-- headline + image read as one unit -->
+      <div class="unit">
+        <h1 class="headline">
+          <span class="headline__row"><span data-in="2">The future is</span></span>
+          <span class="headline__row"><span data-in="3">easier to build</span></span>
+          <span class="headline__row"><span data-in="4">than to predict.</span></span>
+        </h1>
+
+        <figure class="plate" data-in="5" aria-hidden="true">
+          <div class="plate__shot"></div>
+        </figure>
+      </div>
+
+      <p class="caption" data-in="6">Ideas, experiments, software.</p>
+
+      <div class="actions" data-in="7">
+        <a class="control control--outline" href="mailto:hello@ineffablebeast.in">Contact me</a>
+        <button class="control control--solid" type="button" id="projects-open" aria-haspopup="dialog">
+          Projects <span class="control__mark" aria-hidden="true">&#8599;</span>
+        </button>
+      </div>
+
+      <!-- the note, set as real type. on narrow viewports this is what renders,
+           sitting last so the statement and the two actions come first. above
+           860px the screenshot above takes over and this stays available to
+           screen readers only. -->
+      <blockquote class="note" data-in="8">
+        <p class="note__from">@ineffablebeast</p>
+        <p class="note__lines">
+          <span>Stay curious.</span>
+          <span>Create value.</span>
+          <span>Let everything else compound.</span>
+        </p>
+        <p class="note__body">
+          You won&rsquo;t have to worry about jobs, careers or AI
+          when you&rsquo;re busy building what&rsquo;s next.
+        </p>
+      </blockquote>
+
+    </div>
+  </main>
+
+</div>
+
+<section class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden>
+  <div class="sheet__inner">
+    <div class="sheet__top">
+      <h2 class="sheet__title" id="sheet-title">Projects</h2>
+      <button class="sheet__close" type="button" id="projects-close">Close</button>
+    </div>
+    <div class="sheet__list" id="sheet-list"><!-- rendered in main.js --></div>
+  </div>
+</section>
+
+<script src="main.js"></script>
+</body>
+</html>
