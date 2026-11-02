@@ -12,6 +12,12 @@ const projects = [
     state: "Live",
     url: "https://sayit.ineffablebeast.in",
   },
+  {
+    name: "LearningOS",
+    description: "First-principles study, knowledge graphs, and an offline Learning Atlas.",
+    state: "Live",
+    url: "https://www.rahulj.space/LearningOS/",
+  },
   // {
   //   name: "Project name",
   //   description: "One short line.",
